@@ -8,8 +8,11 @@ public class IfStatement {
             fileSended++;
             System.out.println("Archivo enviado ");
         }else {
+            fileSended--;
             System.out.println("No fue enviado el archivo");
 
         }
+        System.out.println(isBluetoothEnabled);
+        System.out.println(fileSended);
     }
 }
