@@ -17,7 +17,8 @@ public class Funciones {
         double volumen = volumenEsfera(y);
         System.out.println(volumen);
 
-        System.out.println("valor moneda a dolar: " + converToDolar(100,"Q"));
+        System.out.println("valor moneda a dolar: " + converToDolar(100,"MXN"));
+
     }
     public static double areaCirculo(double r){
         return Math.PI * Math.pow(r,2);
@@ -30,7 +31,12 @@ public class Funciones {
     public static double volumenEsfera(double r){
         return 4/3 * Math.PI * Math.pow(r,3);
     }
-
+    /**
+     * Descripcion: Funcion que especificando su moneda convierte una cantidad de dinero a dolares
+     * @param cantidad cantidad de dinero
+     * @param  moneda tipo de moneda: Solo MXN y Q
+     * @return cantidad devuelve la cantidad actualizada en dolares.
+     * */
     public static double converToDolar(double cantidad, String moneda){
         //Q MXN
         switch (moneda){
